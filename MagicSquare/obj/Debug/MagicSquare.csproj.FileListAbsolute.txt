@@ -1,0 +1,11 @@
+D:\Facultate\IA\Proiect Magic Square\MagicSquare\MagicSquare\bin\Debug\MagicSquare.exe.config
+D:\Facultate\IA\Proiect Magic Square\MagicSquare\MagicSquare\bin\Debug\MagicSquare.exe
+D:\Facultate\IA\Proiect Magic Square\MagicSquare\MagicSquare\bin\Debug\MagicSquare.pdb
+D:\Facultate\IA\Proiect Magic Square\MagicSquare\MagicSquare\obj\Debug\MagicSquare.csproj.AssemblyReference.cache
+D:\Facultate\IA\Proiect Magic Square\MagicSquare\MagicSquare\obj\Debug\MagicSquare.csproj.SuggestedBindingRedirects.cache
+D:\Facultate\IA\Proiect Magic Square\MagicSquare\MagicSquare\obj\Debug\MagicSquare.FormMagicSquare.resources
+D:\Facultate\IA\Proiect Magic Square\MagicSquare\MagicSquare\obj\Debug\MagicSquare.Properties.Resources.resources
+D:\Facultate\IA\Proiect Magic Square\MagicSquare\MagicSquare\obj\Debug\MagicSquare.csproj.GenerateResource.cache
+D:\Facultate\IA\Proiect Magic Square\MagicSquare\MagicSquare\obj\Debug\MagicSquare.csproj.CoreCompileInputs.cache
+D:\Facultate\IA\Proiect Magic Square\MagicSquare\MagicSquare\obj\Debug\MagicSquare.exe
+D:\Facultate\IA\Proiect Magic Square\MagicSquare\MagicSquare\obj\Debug\MagicSquare.pdb

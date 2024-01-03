@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicSquare", "MagicSquare\MagicSquare.csproj", "{CFFADA19-9DDE-4AFF-A4EF-306E6AB0B69F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFFADA19-9DDE-4AFF-A4EF-306E6AB0B69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFADA19-9DDE-4AFF-A4EF-306E6AB0B69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFADA19-9DDE-4AFF-A4EF-306E6AB0B69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFADA19-9DDE-4AFF-A4EF-306E6AB0B69F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {595E2B4B-613B-47EE-B8B8-15EFF14F4F29}
+	EndGlobalSection
+EndGlobal
