@@ -252,7 +252,7 @@
             this.Dimensiune.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dimensiune.Location = new System.Drawing.Point(601, 154);
             this.Dimensiune.Name = "Dimensiune";
-            this.Dimensiune.Size = new System.Drawing.Size(180, 16);
+            this.Dimensiune.Size = new System.Drawing.Size(181, 16);
             this.Dimensiune.TabIndex = 26;
             this.Dimensiune.Text = "Alege dimensiunea patratului";
             // 
@@ -274,7 +274,7 @@
             this.Suma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Suma.Location = new System.Drawing.Point(629, 247);
             this.Suma.Name = "Suma";
-            this.Suma.Size = new System.Drawing.Size(122, 16);
+            this.Suma.Size = new System.Drawing.Size(123, 16);
             this.Suma.TabIndex = 29;
             this.Suma.Text = "Alegeți suma dorită";
             // 
@@ -293,6 +293,7 @@
             this.Rezolvare.TabIndex = 31;
             this.Rezolvare.Text = "Rezolvă problema";
             this.Rezolvare.UseVisualStyleBackColor = true;
+            this.Rezolvare.Click += new System.EventHandler(this.Rezolvare_Click);
             // 
             // FormMagicSquare
             // 

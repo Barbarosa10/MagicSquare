@@ -12,9 +12,28 @@ namespace MagicSquare
 {
     public partial class FormMagicSquare : Form
     {
+        TextBox[,] square;
         public FormMagicSquare()
         {
             InitializeComponent();
+            square = new TextBox[,] { { el11, el12, el13, el14, el15 }, { el21, el22, el23, el24, el25 }, { el31, el32, el33, el34, el35 }, { el41, el42, el43, el44, el45 }, { el51, el52, el53, el54, el55 } };
+        }
+
+        private void Rezolvare_Click(object sender, EventArgs e)
+        {
+            int size = Convert.ToInt32(comboDimensiune.SelectedItem.ToString());
+            int suma = Convert.ToInt32(textSuma.Text);
+            MagicSquareSolver s = new MagicSquareSolver(size, suma);
+            s.Solve();
+            int[,] squareSolve = s.GetSolution();
+
+            for(int i=0; i<size;i++)
+            {
+                for(int j=0; j<size; j++)
+                {
+                    square[i,j].Text = squareSolve[i,j].ToString();
+                }
+            }
         }
     }
 }
