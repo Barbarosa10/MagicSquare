@@ -36,7 +36,6 @@ namespace MagicSquare
             this.size = size;
             this.square = new int[size, size];
             this.targetSum = targetSum; // Specific for 3x3 magic square
-            this.usedNumbers = new bool[targetSum+1]; // Track used numbers
             this.posSquare = new List<int>[size, size];
 
             for (int i = 0; i < size; i++)
@@ -141,7 +140,6 @@ namespace MagicSquare
                     secDiagSum += num;  
                 if (rowsSum[row] <= targetSum && colSum[col] <= targetSum && primDiagSum <= targetSum && secDiagSum <= targetSum)
                 {
-                    Console.WriteLine(square[0, 1]);
                     savedPosSquare = DeepCopyDomains(posSquare);
                     //Removing from all domains
                     for (int i = row; i < size; i++)
@@ -184,44 +182,6 @@ namespace MagicSquare
                     if(!CheckIfDomainsVoid(savedPosSquare))
                         if (PlaceNumber(nextRow, nextCol, savedPosSquare))
                             return true;
-                    //Add for primary diagonal
-                   /* if (row == col)
-                    {
-                        for (int i = 0; i < size; i++)
-                        {
-                            if(i!= row)
-                                posSquare[i, i].AddRange(Enumerable.Range(size * size - num, num));
-                        }
-                    }
-                    //Add for secondary
-                    if (row + col == size-1)
-                    {
-                        for(int i=0;i<size;i++)
-                        {
-                            if(i != row)
-                                posSquare[i,size-1-i].AddRange(Enumerable.Range(size * size - num, num));
-                        }
-                    }
-                    //Adding to column
-                    for (int i = 0; i < size; i++)
-                    {
-                        if (i != col)
-                            posSquare[row, i].AddRange(Enumerable.Range(size*size-num, num));
-                    }
-                    //Adding to row
-                    for (int i = 0; i < size; i++)
-                    {
-                        if (i != row)
-                            posSquare[i, col].AddRange(Enumerable.Range(size*size-num, num));
-                    }
-                    for (int i = 0; i < size; i++)
-                    {
-                        for (int j = 0; j < size; j++)
-                        {
-                            if (i != row && j != col)
-                                posSquare[i, j].Add(num);
-                        }
-                    }*/
 
                 }
 
@@ -235,82 +195,6 @@ namespace MagicSquare
             }
 
             return false;
-        }
-
-/*        private bool PlaceNumber(int row, int col)
-        {
-            if (row == size)
-            {
-                return IsValid();
-            }
-
-            int nextRow = col == size - 1 ? row + 1 : row;
-            int nextCol = col == size - 1 ? 0 : col + 1;
-
-            for (int num = 1; num <= size; num++)
-            {
-                if (!usedNumbers[num])
-                {
-                    square[row, col] = num;
-                    rowsSum[row] += num;
-                    colSum[col] += num;
-                    if (row == col)
-                        primDiagSum += num;
-                    usedNumbers[num] = true;
-                    if (rowsSum[row] <= targetSum && colSum[col] <= targetSum && primDiagSum <= targetSum)
-                    {
-                        if (PlaceNumber(nextRow, nextCol))
-                        {
-                            return true;
-                        }
-                    }
-
-                    square[row, col] = 0; // Backtrack
-                    rowsSum[row] -= num;
-                    colSum[col] -= num;
-                    if (row == col)
-                        primDiagSum -= num;
-                    usedNumbers[num] = false;
-                }
-            }
-
-            return false;
-        }*/
-
-        private bool IsSumPotentialValid()
-        {
-            int sum;
-
-            // Check rows and columns
-            for (int i = 0; i < size; i++)
-            {
-                sum = 0;
-                for (int j = 0; j < size; j++)
-                    sum += square[i, j];
-                if (sum > targetSum)
-                    return false;
-
-                sum = 0;
-                for (int j = 0; j < size; j++)
-                    sum += square[j, i];
-                if (sum > targetSum)
-                    return false;
-            }
-
-            // Check diagonals
-            sum = 0;
-            for (int i = 0; i < size; i++)
-                sum += square[i, i];
-            if (sum > targetSum)
-                return false;
-
-            sum = 0;
-            for (int i = 0; i < size; i++)
-                sum += square[i, size - 1 - i];
-            if (sum > targetSum)
-                return false;
-
-            return true;
         }
 
         private bool IsValid()
