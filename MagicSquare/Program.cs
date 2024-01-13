@@ -97,10 +97,32 @@ namespace MagicSquare
         }
 
         private bool PlaceNumber(int row, int col, List<int>[,] posSquare)
-        {   
+        {
+
             if (row == size)
             {
                 return IsValid();
+            }
+
+            if(col == 0 && row > 0)
+            {
+                int s = 0;
+                for(int i=0; i<size;i++)
+                {
+                    s += square[row - 1,i];
+                }
+                if (s != targetSum)
+                    return false;
+            }
+            else if (row == size-1 && col > 0)
+            {
+                int s = 0;
+                for (int i = 0; i < size; i++)
+                {
+                    s += square[i, col-1];
+                }
+                if (s != targetSum)
+                    return false;
             }
 
             List<int>[,] savedPosSquare;
@@ -116,14 +138,15 @@ namespace MagicSquare
                 if(row == col)
                     primDiagSum += num;
                 if (row + col == size - 1)
-                    secDiagSum += num;
+                    secDiagSum += num;  
                 if (rowsSum[row] <= targetSum && colSum[col] <= targetSum && primDiagSum <= targetSum && secDiagSum <= targetSum)
                 {
+                    Console.WriteLine(square[0, 1]);
                     savedPosSquare = DeepCopyDomains(posSquare);
                     //Removing from all domains
-                    for(int i=0;i<size;i++)
+                    for (int i = row; i < size; i++)
                     {
-                        for(int j=0;j<size;j++)
+                        for (int j = 0; j < size; j++)
                         {
                             if (!(i == row && j == col))
                             {
@@ -132,33 +155,29 @@ namespace MagicSquare
                         }
                     }
                     //Removing from column
-                    for(int i=0;i<size;i++)
+                    for (int i=row+1;i<size;i++)
                     {
-                        if (i != row)
-                            savedPosSquare[i, col].RemoveAll(x => x >= (targetSum - num));
+                            savedPosSquare[i, col].RemoveAll(x => x > (targetSum - colSum[col]));
                     }
                     //Remove from row
-                    for (int i = 0; i < size; i++)
+                    for (int i = col+1; i < size; i++)
                     {
-                        if (i != col)
-                            savedPosSquare[row, i].RemoveAll(x => x >= (targetSum - num));
+                            savedPosSquare[row, i].RemoveAll(x => x > (targetSum - rowsSum[row]));
                     }
                     //Remove for primary diagonal
                     if(row == col)
                     {
-                        for(int i=0;i<size;i++)
+                        for(int i=row+1;i<size;i++)
                         {
-                            if(i != row)
-                                savedPosSquare[i, i].RemoveAll(x => x >= (targetSum - num));
+                                savedPosSquare[i, i].RemoveAll(x => x > (targetSum - primDiagSum));
                         }
                     }
                     //Remove for secondary
                     if(row + col == size-1)
                     {
-                        for(int i=0;i<size;i++)
+                        for(int i=row+1;i<size;i++)
                         {
-                            if(i != row)
-                                savedPosSquare[i,size-1-i].RemoveAll(x => x >= (targetSum - num));
+                                savedPosSquare[i,size-1-i].RemoveAll(x => x > (targetSum - secDiagSum));
                         }
                     }
 
