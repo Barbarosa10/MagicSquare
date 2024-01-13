@@ -1,0 +1,17 @@
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\MagicSquareTest.dll
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\MagicSquareTest.pdb
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\MagicSquare.exe
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\MagicSquare.pdb
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\MagicSquare.exe.config
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\obj\Debug\MagicSquareTest.csproj.AssemblyReference.cache
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\obj\Debug\MagicSquareTest.csproj.CoreCompileInputs.cache
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\obj\Debug\MagicSquareTest.csproj.CopyComplete
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\obj\Debug\MagicSquareTest.dll
+C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquareTest\obj\Debug\MagicSquareTest.pdb

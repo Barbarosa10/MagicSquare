@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+[assembly: InternalsVisibleTo("MagicSquareTest")]
 namespace MagicSquare
 {
     internal static class Program
@@ -22,7 +25,7 @@ namespace MagicSquare
 
     public class MagicSquareSolver
     {
-        private int[,] square;
+        public int[,] square { get; set; }
         private int size;
         private int targetSum;
         private bool[] usedNumbers;
@@ -30,6 +33,7 @@ namespace MagicSquare
         private int[] colSum;
         private int primDiagSum, secDiagSum;
         private List<int>[,] posSquare;
+
 
         public MagicSquareSolver(int size, int targetSum = 15)
         {
@@ -69,7 +73,7 @@ namespace MagicSquare
             }
         }
 
-        List<int>[,] DeepCopyDomains(List<int>[,] originalDomains)
+        public List<int>[,] DeepCopyDomains(List<int>[,] originalDomains)
         {
             List<int>[,] newDomains = new List<int>[size, size];
             for (int i = 0; i < size; i++)
@@ -80,7 +84,7 @@ namespace MagicSquare
             return newDomains;
         }
 
-        private bool CheckIfDomainsVoid(List<int>[,] domain)
+        public bool CheckIfDomainsVoid(List<int>[,] domain)
         {
             for (int i = 0; i < size; i++)
             {
@@ -197,7 +201,7 @@ namespace MagicSquare
             return false;
         }
 
-        private bool IsValid()
+        public bool IsValid()
         {
             int sum;
 
