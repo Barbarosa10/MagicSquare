@@ -19,3 +19,13 @@ C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquare\obj\Debug\MagicSquare.
 C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquare\obj\Debug\MagicSquare.csproj.CoreCompileInputs.cache
 C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquare\obj\Debug\MagicSquare.exe
 C:\Users\flare\Desktop\AI\Proiect\MagicSquare\MagicSquare\obj\Debug\MagicSquare.pdb
+D:\Facultate\EP\Proiect\MagicSquare\MagicSquare\bin\Debug\MagicSquare.exe.config
+D:\Facultate\EP\Proiect\MagicSquare\MagicSquare\bin\Debug\MagicSquare.exe
+D:\Facultate\EP\Proiect\MagicSquare\MagicSquare\bin\Debug\MagicSquare.pdb
+D:\Facultate\EP\Proiect\MagicSquare\MagicSquare\obj\Debug\MagicSquare.csproj.AssemblyReference.cache
+D:\Facultate\EP\Proiect\MagicSquare\MagicSquare\obj\Debug\MagicSquare.FormMagicSquare.resources
+D:\Facultate\EP\Proiect\MagicSquare\MagicSquare\obj\Debug\MagicSquare.Properties.Resources.resources
+D:\Facultate\EP\Proiect\MagicSquare\MagicSquare\obj\Debug\MagicSquare.csproj.GenerateResource.cache
+D:\Facultate\EP\Proiect\MagicSquare\MagicSquare\obj\Debug\MagicSquare.csproj.CoreCompileInputs.cache
+D:\Facultate\EP\Proiect\MagicSquare\MagicSquare\obj\Debug\MagicSquare.exe
+D:\Facultate\EP\Proiect\MagicSquare\MagicSquare\obj\Debug\MagicSquare.pdb

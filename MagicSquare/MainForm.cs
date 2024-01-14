@@ -16,7 +16,7 @@ namespace MagicSquare
         public FormMagicSquare()
         {
             InitializeComponent();
-            square = new TextBox[,] { { el11, el12, el13, el14, el15 }, { el21, el22, el23, el24, el25 }, { el31, el32, el33, el34, el35 }, { el41, el42, el43, el44, el45 }, { el51, el52, el53, el54, el55 } };
+            square = new TextBox[,] { { el11, el12, el13, el14 }, { el21, el22, el23, el24 }, { el31, el32, el33, el34}, { el41, el42, el43, el44 }};
         }
 
         private void Rezolvare_Click(object sender, EventArgs e)

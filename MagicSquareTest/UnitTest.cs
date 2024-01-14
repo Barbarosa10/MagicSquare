@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace MagicSquareTest
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest
     {
         [TestMethod]
         public void TestIsValidFalse()
@@ -33,7 +33,7 @@ namespace MagicSquareTest
         }
 
         [TestMethod]
-        public void TestCheckDomainVoidTrue()
+        public void TestCheckDomainVoidFalse()
         {
             MagicSquareSolver s = new MagicSquareSolver(3, 15);
             List<int> [,] posSquare = new List<int>[3, 3];
@@ -54,7 +54,7 @@ namespace MagicSquareTest
         }
 
         [TestMethod]
-        public void TestCheckDomainFalse()
+        public void TestCheckDomainVoidTrue()
         {
             MagicSquareSolver s = new MagicSquareSolver(3, 15);
             List<int>[,] posSquare = new List<int>[3, 3];

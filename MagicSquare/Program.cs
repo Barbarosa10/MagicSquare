@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -28,7 +26,6 @@ namespace MagicSquare
         public int[,] square { get; set; }
         private int size;
         private int targetSum;
-        private bool[] usedNumbers;
         private int[] rowsSum;
         private int[] colSum;
         private int primDiagSum, secDiagSum;
@@ -46,12 +43,11 @@ namespace MagicSquare
             {
                 for (int j = 0; j < size; j++)
                 {
-                    posSquare[i, j] = new List<int>(); // Initialize each cell as a new list
+                    posSquare[i, j] = new List<int>(); 
                     for(int k=1; k<=size*size;k++)
                     {
                         posSquare[i, j].Add(k);
                     }
-                                                           // Optionally add elements to the list here
                 }
             }
 
